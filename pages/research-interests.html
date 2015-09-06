@@ -19,16 +19,47 @@
                     <li><a href="http://xhub.github.io/"></a></li>
                     <li><a href="http://xhub.github.io/pages/publications.html">Publications</a></li>
                     <li class="active"><a href="http://xhub.github.io/pages/research-interests.html">Research interests</a></li>
+                    <li><a href="http://xhub.github.io/pages/videos.html">Videos</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 <section id="content" class="body">
     <h1 class="entry-title">Research interests</h1>
     
-    <ul>
-<li>Application of Variational Inequalities to Friction Contact problems and Control Theory</li>
-<li>Sliding Mode Control</li>
-<li>Numerical Integration</li>
-<li>Explicit Nonlinear Model Predictive Control</li>
+    <h1>Research Interest</h1>
+<ul>
+<li>Application of <a href="https://en.wikipedia.org/wiki/Variational_inequality">Variational Inequality</a> to rigid-body friction contact problems
+(or <a href="https://en.wikipedia.org/wiki/Non-smooth_mechanics">non-smooth mechanics</a>) and <a href="https://en.wikipedia.org/wiki/Control_theory">Control Theory</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sliding_mode_control">Sliding Mode Control</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Numerical_integration">Numerical Integration</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Model_predictive_control">Explicit Nonlinear Model Predictive Control</a></li>
+</ul>
+<h1>PhD Research</h1>
+<p>My PhD was focused on the discrete-time version of <a href="https://en.wikipedia.org/wiki/Sliding_mode_control">sliding mode control</a>,
+a well-known technique in the field. The term discrete-time refers here to the case when the control input (or action) changes
+only at some discrete time instants. The other type of controller is said to be continuous-time if the control input can changes
+at any time instant, with no frequency constraint. The latter case is usually the one used in Control Theory, whereas the former
+is used almost for every implementation. Indeed, when a microcontroller is used to compute the control input, its value can
+only change at a given frequency. This topic is of paramount important given the ubiquity of microcontrollers in applications.</p>
+<p>The main contribution of this research effort is the use of an implicit discretization instead of an explicit one.
+If you are interested in knowing more about the difference between the two methods, see this <a href="https://en.wikipedia.org/wiki/Explicit_and_implicit_methods">wiki page</a>.</p>
+<p>During my PhD, I made some contributions in the three domain of Automatic Control</p>
+<ul>
+<li>
+<p>Theory: Starting from the work of my advisors, I further characterize the implicitly discretized sliding mode controllers.
+  We could show that many properties of the continuous-time version are preserved, or have very similar counterparts.</p>
+</li>
+<li>
+<p>Simulation: I took part in the development in the <a href="http://siconos.gforge.inria.fr/">Siconos</a> platform, dedicated to the simulation of nonsmooth dynamical systems.
+  I implemented a algorithm to solve Affine Variational Inequality (AVI) and I created a Control Toolbox.
+  I'm still involved in the development of Siconos</p>
+</li>
+<li>
+<p>Experimentation: I successfully implemented the implicit sliding mode controller on two experimental setups: an electro-pneumatic actuator in <a href="http://www.irccyn.ec-nantes.fr/">IRCCyN</a>, Nantes
+  and an inverted pendulum locate at the <a href="http://www.cristal.univ-lille.fr/?lang=en">CRIStAL lab</a>, Lille. In both cases, the implicitly discretized controller outperforms the explicit one.
+  With both setups, the classical ECB-SMC controller was used. In Nantes, the twisting controller (a second order sliding mode controller) was also implemented.
+  See the <a href="http://xhub.github.io/pages/videos.html">videos page</a> for an illustration of the effectiveness of the method.
+  This tests were successfully conducted thanks to the support of both labs.</p>
+</li>
 </ul>
 </section>
         <section id="extras" class="body">
